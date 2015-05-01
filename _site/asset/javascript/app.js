@@ -64,7 +64,7 @@ function slideWithWrap(forward){
 };
 
 function highlightTab(){
-  var special = {'' : 'home'}; // hash of relative path => tab name if different
+  var special = {'' : 'contact'}; // hash of relative path => tab name if different
   var page = window.location.pathname.split('/')[1];
   var id = (special.hasOwnProperty(page) ? special[page] : page);
   $("#nav-" + id).parent().addClass("selected");
